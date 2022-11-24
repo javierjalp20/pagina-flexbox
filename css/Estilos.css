@@ -1,0 +1,172 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.header{
+    background: rgb(112, 235, 218);
+    display: flex;
+    justify-content: center;
+    align-items: center;      
+    font-size: 30px;
+    height: 20vh;
+    
+}
+
+h1{
+    color: black;
+    position: absolute;
+    
+    
+}
+
+.img_con{
+    width: 100%;
+    height: 100%;
+              
+}
+
+img{
+    width: 100%;
+    height: 20vh;
+    object-fit: cover;
+    object-position: top;
+    opacity: .5;
+}
+
+
+.nav{
+    background: rgb(20, 20, 20);
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+    
+    
+}
+
+.sub_menu{
+    position: absolute;
+    top: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: rgb(20, 20, 20);
+    display: none;  
+    
+}
+
+.sub_menu .menu_item{
+    border-right: none;
+}
+
+.menu_item{
+   flex: 1;      
+   border-right: 1px solid black;
+   position: relative;
+   text-align: center;
+   padding-top: 10px;
+   padding-bottom: 10px;
+
+}
+
+.menu_item:hover{
+    background-color: black;
+    
+}
+
+.menu_item:hover>.sub_menu{
+    display: block;
+    
+    
+}
+
+
+.menu_link{
+    text-decoration: none;
+    color: white;
+    display: block;
+    
+    
+}
+
+.contenedor{    
+    display: flex;
+    flex-wrap: wrap;
+    
+
+}
+
+.aside{
+    background: rgb(236, 236, 169);
+    padding: 10px;
+    flex: 1;
+}
+
+.seccion{
+    background: rgb(247, 247, 110);
+    padding: 10px;
+    flex: 3;
+}
+
+h2{
+    padding-bottom: 15px;
+}
+
+.footer{
+    background: darkgray;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 30px;
+    
+    
+}
+
+
+
+@media screen and (max-width:600px){
+
+    .menu{
+        flex-direction: column;   
+        
+    }
+
+    .menu_item{
+        
+        border-right: none;
+        border-bottom: 1px solid black;
+
+                
+    }
+
+    .contenedor{
+        flex-direction: column;
+    }
+
+    .footer{
+        font-size: 25px;
+    }
+
+    .menu_item:hover>.sub_menu{
+        position: relative;
+        top: 15px;
+        background: rgb(35, 35, 35);
+        width: 100%;
+        border: 1px solid rgb(50, 50, 50);       
+        
+        
+    }
+    
+}
+
+
+
+
